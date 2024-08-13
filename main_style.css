@@ -246,7 +246,7 @@ p {
     display: block; /* Ensure the icon is treated as a block-level element */
     text-align: left; /* Center the icon within its container */
     margin: 0 auto 20px auto; /* Center the icon horizontally and add margin below it */
-    font-size: 1.5rem; /* Keep the icon size large */
+    font-size: 1.25rem; /* Keep the icon size large */
 	margin-bottom: 20px; /* Space between the icon and the title */
 }
 
@@ -277,5 +277,6 @@ p {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 
 

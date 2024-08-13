@@ -28,25 +28,26 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link text-center" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-center" href="#hero-section">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#mission-section">Brotherhood</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#">Events</a>
+                <a class="nav-link" href="#purpose-section">Our Purpose</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#">Membership</a>
+                <a class="nav-link" href="#culture-section">Culture</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact-section">Contact</a>
             </li>
         </ul>
     </div>
 </nav>
+
 
 	<section id="hero-section" >
       <div class="hero-image" >
@@ -116,12 +117,60 @@
         </div>
     </div>
 </section>
+	
+<section id="culture-section" style="background-color: #333;">
+    <div class="container-fluid py-5 text-light">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="path_to_your_image.jpg" alt="Fraternity members" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <h2><strong>ONE CULTURE, ANY RACE.</strong></h2>
+                <p style="font-size: 1rem; line-height: 1.5;">
+                    Unlike other organizations that emphasize their past, Omega Delta Phi looks ahead to our future. Our fraternity is built on the belief that true personal growth comes from challenging preconceived ideas and embracing new perspectives. "One Culture, Any Race" is more than just a slogan; it represents our commitment to fostering a diverse and inclusive environment that encourages learning from one another. We challenge narrow viewpoints and promote understanding, knowing that truth is often a matter of perspective. This philosophy of unity and cultural exchange is our guiding principle as we strive to build a fraternity for the new millennium.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 <!-- Your content goes here -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/2ad03665de.js" crossorigin="anonymous"></script>
+	
+<script>
+    $(document).ready(function(){
+        $('a.nav-link').on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+
+
 </body>
 </html>
