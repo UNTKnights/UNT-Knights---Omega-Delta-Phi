@@ -471,10 +471,10 @@ p {
 }
 
 
-iframe {
+.rush {
     width: 100%;
     height: 100%; /* Allow the iframe to take up full height */
-    min-height: 3500px; /* Set a minimum height if needed */
+    min-height: 500px; /* Set a minimum height if needed */
     border: none;
 }
 
