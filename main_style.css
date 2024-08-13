@@ -1,4 +1,8 @@
 /* Custom complex CSS with dark theme */
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: black;
     color: silver;
@@ -205,6 +209,9 @@ p {
 
 #mission-section {
     background-color: #000000; /* Light gray background color */
+	padding-left: 20px; /* Adjust the value as needed */
+	padding-right: 20px;
+    margin-left: 20px; /* Optional: Add margin if you want more spacing */
 }
 
 
@@ -239,7 +246,7 @@ p {
     display: block; /* Ensure the icon is treated as a block-level element */
     text-align: left; /* Center the icon within its container */
     margin: 0 auto 20px auto; /* Center the icon horizontally and add margin below it */
-    font-size: 1.75rem; /* Keep the icon size large */
+    font-size: 1.5rem; /* Keep the icon size large */
 	margin-bottom: 20px; /* Space between the icon and the title */
 }
 
@@ -247,6 +254,9 @@ p {
     background-color: black; /* Your preferred background color */
     color: silver; /* Your preferred text color */
     padding: 50px 0;
+	padding-left: 20px; /* Adjust the value as needed */
+	padding-right: 20px;
+   
 }
 
 .section-title {
@@ -257,7 +267,7 @@ p {
 }
 
 .section-text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
