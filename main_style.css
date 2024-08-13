@@ -52,7 +52,7 @@ body {
 .navbar-brand,
 .navbar-nav .nav-link {
 	font-family: 'Poppins', sans-serif; /* Apply Poppins font to navbar links */
-    color: silver !important;
+    color: #333 !important;
     font-size: 20px; /* Adjust font size as needed */
 	transition: color 0.3s ease;
 	transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -65,18 +65,23 @@ body {
 }
 
 /* Customization for Bootstrap navbar-toggler icon */
-.navbar-toggler-icon {
-    background-color: silver;
-}
-
 .navbar-toggler {
-    border-color: silver;
+    border-color: #333; /* Customize the border color */
 }
 
-/* Customization for the expanded navbar menu */
-.navbar-collapse {
-    background-color: #333 !important; /* Dark gray */
+.navbar-toggler-icon {
+    background-color: #333; /* Customize the icon color */
 }
+
+/* Ensure the collapse element is hidden by default on small screens */
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-collapse.show {
+    display: block;
+}
+
 
 .navbar-collapse .navbar-nav .nav-link {
     color: silver !important;
@@ -90,7 +95,7 @@ body {
 .btn {
     background-color: #8B0000; /* Scarlet red */
     border-color: #8B0000; /* Scarlet red */
-    color: silver;
+    color:#333;
 }
 
 .btn:hover {
@@ -101,22 +106,22 @@ body {
 
 .jumbotron {
     background-color: #333; /* Dark gray */
-    color: silver;
+    color: #333;
 }
 
 .card {
     background-color: #333; /* Dark gray */
-    color: silver;
+    color: #333;
 }
 
 .card-header {
     background-color: #8B0000; /* Scarlet red */
-    color: silver;
+    color: #333;
 }
 
 .card-footer {
     background-color: #333; /* Dark gray */
-    color: silver;
+    color: #333;
 }
 
 /* Hero Section Styles */
@@ -278,5 +283,12 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
+#culture-section {
+    background-color: black; /* Your preferred background color */
+    color: silver; /* Your preferred text color */
+    padding: 50px 0;
+	padding-left: 20px; /* Adjust the value as needed */
+	padding-right: 20px;
+   
+}
 

@@ -28,21 +28,21 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link text-center" href="#hero-section">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#mission-section">Brotherhood</a>
+                <a class="nav-link" href="#mission-section">About</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#purpose-section">Our Purpose</a>
+                <a class="nav-link" href="#purpose-section">Events</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#culture-section">Culture</a>
+                <a class="nav-link" href="#culture-section">Membership</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#contact-section">Contact</a>
+                <a class="nav-link" href="#">Contact</a>
             </li>
         </ul>
     </div>
@@ -154,21 +154,14 @@
 <script src="https://kit.fontawesome.com/2ad03665de.js" crossorigin="anonymous"></script>
 	
 <script>
-    $(document).ready(function(){
-        $('a.nav-link').on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
+  // Selecting the toggle button and the navbar links
+  const toggleButton = document.querySelector('.navbar-toggler');
+  const navbarLinks = document.querySelector('.navbar-collapse');
 
-                var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
+  // Adding an event listener for the click event on the toggle button
+  toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('show');
+  });
 </script>
 
 
