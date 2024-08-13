@@ -19,7 +19,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Omega Delta Phi</a>
+    <a class="navbar-brand" href="index.html#hero-section">Omega Delta Phi</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link text-center" href="index.html#hero-section">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-center" href="index.html#hero-section">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item text-center">
                 <a class="nav-link" href="index.html#purpose-section">About</a>
@@ -46,24 +46,25 @@
     </div>
 </nav>
 
-<section id="merchandise-section" style="background-color: #333; padding: 50px 50px 50px 50px;">
+
+
+<section id="merchandise-section" style="background-color: #000000; margin-top: 8.5rem; position: inherit ">
     <div class="container text-light">
-        <h2 class="text-center">Support Our Chapter</h2>
-        
-        <section id="membership-form-section" class="py-5">
-    <div class="container">
         <h2 class="text-center mb-4">Support Our Chapter</h2>
-		<p class="text-center mb-4">Check out our exclusive space-themed t-shirt and <br>show your support for Omega Delta Phi.</p>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSdTsY2d4Izkt5TquxMntY2h640IGSVAOQHXCdsL2drPSNXYMA/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-    </div>
+	</div>	
 </section>
-    </div>
-</section>
+        <section id="merchandise-form-section" class="py-5">
+			<div class="container">
+        			</div>
+				<div >
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTsY2d4Izkt5TquxMntY2h640IGSVAOQHXCdsL2drPSNXYMA/viewform?embedded=true" scrolling="no" width="100%" height="3000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				</div>
+		
+				
+		</section>
 
 <!-- Footer Section -->
-<section id="footer-section">
+<section id="footer-section" style="margin-top: 2350px;">
     <div class="row d-flex text-center"> 
         <div class="col-12">
             <h5 id="trademark" style="font-size: .75rem; line-height: 1;">&#169; UNT Knights 2024</h5>
@@ -75,6 +76,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/2ad03665de.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/2ad03665de.js" crossorigin="anonymous"></script>
 
+<script>
+  // Selecting the toggle button and the navbar links
+  const toggleButton = document.querySelector('.navbar-toggler');
+  const navbarLinks = document.querySelector('.navbar-collapse');
+
+  // Adding an event listener for the click event on the toggle button
+  toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('show');
+  });
+</script>
+	
 </body>
 </html>
