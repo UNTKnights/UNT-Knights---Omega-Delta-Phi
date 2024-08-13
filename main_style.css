@@ -116,6 +116,39 @@ body {
 }
 
 #hero-section {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh; /* Adjust this to your desired height */
+}
+
+#AXlogo {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    margin-top: 20px; /* Adjust the spacing as needed */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+#hero-section {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 
   /* Set a specific height */
@@ -143,6 +176,8 @@ body {
   transform: translate(-50%, -50%);
   color: white;
 }
+
+
 
 .head {
   padding-top:35vh;
